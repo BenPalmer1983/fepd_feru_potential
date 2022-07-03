@@ -1,0 +1,760 @@
+
+     Program PWSCF v.6.7MaX starts on 20Mar2022 at 22:21:31 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      72 processor cores
+     Number of MPI processes:                72
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      72
+     Reading input from pd_0038.in
+Warning: card &CELL ignored
+Warning: card CELL_DYNAMICS = 'BFGS', ignored
+Warning: card CELL_FACTOR = 2.0, ignored
+Warning: card PRESS = 0.0, ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+     file Pd.pbe-spn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  4S 5S 4D renormalized
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     one sub-group per band group will be used
+     ELPA distributed-memory algorithm (size of sub-group:  8*  8 procs)
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         104      68     18                 6832     3663     516
+     Max         105      70     19                 6839     3671     525
+     Sum        7521    4973   1353               492177   264147   37529
+ 
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      14.8443  a.u.
+     unit-cell volume          =    3271.0009 (a.u.)^3
+     number of atoms/cell      =           32
+     number of atomic types    =            1
+     number of electrons       =       576.00
+     number of Kohn-Sham states=          346
+     kinetic-energy cutoff     =      71.0000  Ry
+     charge density cutoff     =     430.0000  Ry
+     scf convergence threshold =      1.0E-08
+     mixing beta               =       0.3000
+     number of iterations used =           10  local-TF  mixing
+     Exchange-correlation= SLA  PW   PBX  PBC
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=  14.844317  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for Pd read from file:
+     /rds/homes/b/bxp912/pp/Pd.pbe-spn-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 790f2ebce206edfd9790dcb9844eca51
+     Pseudo is Projector augmented-wave + core cor, Zval = 18.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1235 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Pd            18.00   106.42000     Pd( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Pd  tau(   1) = (   0.9957400   0.9953810   0.9947070  )
+         2           Pd  tau(   2) = (   0.2467360   0.2449140   0.0046220  )
+         3           Pd  tau(   3) = (   0.2488510   0.0051520   0.2537900  )
+         4           Pd  tau(   4) = (   0.9982910   0.2538300   0.2477570  )
+         5           Pd  tau(   5) = (   0.0023090   0.9970680   0.5070760  )
+         6           Pd  tau(   6) = (   0.2460490   0.2514180   0.4988670  )
+         7           Pd  tau(   7) = (   0.2486840   0.0065240   0.7492480  )
+         8           Pd  tau(   8) = (   0.9942340   0.2467340   0.7516420  )
+         9           Pd  tau(   9) = (   0.0007910   0.4953960   0.0002000  )
+        10           Pd  tau(  10) = (   0.2515600   0.7566850   0.0046660  )
+        11           Pd  tau(  11) = (   0.2462750   0.5076950   0.2464850  )
+        12           Pd  tau(  12) = (   0.0069600   0.7469370   0.2475570  )
+        13           Pd  tau(  13) = (   0.0011880   0.5025080   0.4935040  )
+        14           Pd  tau(  14) = (   0.2543580   0.7524710   0.4981080  )
+        15           Pd  tau(  15) = (   0.2583360   0.5073370   0.7530420  )
+        16           Pd  tau(  16) = (   0.0041840   0.7517770   0.7497840  )
+        17           Pd  tau(  17) = (   0.4966090   0.9962090   0.0022230  )
+        18           Pd  tau(  18) = (   0.7455660   0.2520620   0.9985250  )
+        19           Pd  tau(  19) = (   0.7438610   0.0027880   0.2450630  )
+        20           Pd  tau(  20) = (   0.4987810   0.2492330   0.2533800  )
+        21           Pd  tau(  21) = (   0.4997130   0.0026500   0.4990310  )
+        22           Pd  tau(  22) = (   0.7422570   0.2469030   0.4968170  )
+        23           Pd  tau(  23) = (   0.7453600   0.9974630   0.7455570  )
+        24           Pd  tau(  24) = (   0.5015030   0.2528920   0.7486160  )
+        25           Pd  tau(  25) = (   0.4969070   0.4983950   0.0030510  )
+        26           Pd  tau(  26) = (   0.7503610   0.7479730   0.9971770  )
+        27           Pd  tau(  27) = (   0.7552590   0.5041060   0.2512220  )
+        28           Pd  tau(  28) = (   0.5049700   0.7515690   0.2445450  )
+        29           Pd  tau(  29) = (   0.5024240   0.4949180   0.5074710  )
+        30           Pd  tau(  30) = (   0.7509740   0.7469520   0.4963760  )
+        31           Pd  tau(  31) = (   0.7501030   0.5006710   0.7473350  )
+        32           Pd  tau(  32) = (   0.4984870   0.7546990   0.7512360  )
+
+     number of k points=   365  Marzari-Vanderbilt smearing, width (Ry)=  0.0400
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:   492177 G-vectors     FFT dimensions: ( 100, 100, 100)
+
+     Smooth grid:   264147 G-vectors     FFT dimensions: (  80,  80,  80)
+
+     Estimated max dynamical RAM per process >     924.68 MB
+
+     Estimated total dynamical RAM >      65.02 GB
+
+     Check: negative core charge=   -0.000002
+
+     Initial potential from superposition of free atoms
+
+     starting charge  575.98776, renormalised to  576.00000
+     Starting wfcs are  320 randomized atomic wfcs +   26 random wfcs
+     Checking if some PAW data can be deallocated... 
+
+     total cpu time spent up to now is      113.1 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    71.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  3.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     ethr =  9.33E-05,  avg # of iterations =  4.6
+
+     total cpu time spent up to now is      913.6 secs
+
+     total energy              =  -16384.96698296 Ry
+     estimated scf accuracy    <       0.50236563 Ry
+
+     iteration #  2     ecut=    71.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  8.72E-05,  avg # of iterations =  1.8
+
+     total cpu time spent up to now is     1230.1 secs
+
+     total energy              =  -16384.90682811 Ry
+     estimated scf accuracy    <       0.19339761 Ry
+
+     iteration #  3     ecut=    71.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  3.36E-05,  avg # of iterations =  3.9
+
+     total cpu time spent up to now is     1636.4 secs
+
+     total energy              =  -16384.93120395 Ry
+     estimated scf accuracy    <       0.00888318 Ry
+
+     iteration #  4     ecut=    71.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     ethr =  1.54E-06,  avg # of iterations =  9.5
+
+     total cpu time spent up to now is     2071.2 secs
+
+     total energy              =  -16384.93014480 Ry
+     estimated scf accuracy    <       0.00296361 Ry
+
+     iteration #  5     ecut=    71.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  5.15E-07,  avg # of iterations =  2.1
+
+     total cpu time spent up to now is     2446.8 secs
+
+     total energy              =  -16384.93049289 Ry
+     estimated scf accuracy    <       0.00008235 Ry
+
+     iteration #  6     ecut=    71.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  1.43E-08,  avg # of iterations =  4.1
+
+     total cpu time spent up to now is     2990.1 secs
+
+     total energy              =  -16384.93051863 Ry
+     estimated scf accuracy    <       0.00004124 Ry
+
+     iteration #  7     ecut=    71.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  7.16E-09,  avg # of iterations =  1.1
+
+     total cpu time spent up to now is     3297.4 secs
+
+     total energy              =  -16384.93052199 Ry
+     estimated scf accuracy    <       0.00000784 Ry
+
+     iteration #  8     ecut=    71.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  1.36E-09,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is     3647.3 secs
+
+     total energy              =  -16384.93052275 Ry
+     estimated scf accuracy    <       0.00000038 Ry
+
+     iteration #  9     ecut=    71.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  6.55E-11,  avg # of iterations =  4.0
+
+     total cpu time spent up to now is     4032.4 secs
+
+     total energy              =  -16384.93052275 Ry
+     estimated scf accuracy    <       0.00000016 Ry
+
+     iteration # 10     ecut=    71.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  2.84E-11,  avg # of iterations =  1.8
+
+     total cpu time spent up to now is     4368.0 secs
+
+     End of self-consistent calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is    19.2764 ev
+
+!    total energy              =  -16384.93052293 Ry
+
+     total all-electron energy =   -322945.784230 Ry
+     estimated scf accuracy    <          5.3E-09 Ry
+     smearing contrib. (-TS)   =       0.03413645 Ry
+     internal energy E=F+TS    =  -16384.96465939 Ry
+
+     The total energy is F=E-TS. E is the sum of the following terms:
+     one-electron contribution =   -2495.35083112 Ry
+     hartree contribution      =    1665.08686120 Ry
+     xc contribution           =    -986.55530678 Ry
+     ewald contribution        =   -6400.71754619 Ry
+     one-center paw contrib.   =   -8167.42783649 Ry
+
+     convergence has been achieved in  10 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.00024984    0.01226475    0.01595353
+     atom    2 type  1   force =     0.00677363    0.01206081   -0.01177853
+     atom    3 type  1   force =    -0.00619996   -0.01114005   -0.00278879
+     atom    4 type  1   force =    -0.00619304   -0.01885949    0.00735762
+     atom    5 type  1   force =    -0.01357571    0.00825089   -0.02558777
+     atom    6 type  1   force =     0.00072759    0.01003006    0.00621987
+     atom    7 type  1   force =     0.00848683   -0.00868440    0.00369501
+     atom    8 type  1   force =     0.00809899    0.01575049   -0.00851519
+     atom    9 type  1   force =     0.00067275    0.01266115   -0.01686102
+     atom   10 type  1   force =    -0.00487316   -0.00859266   -0.01390541
+     atom   11 type  1   force =     0.02274472   -0.02254473    0.01040299
+     atom   12 type  1   force =    -0.02205103    0.02590432    0.00240391
+     atom   13 type  1   force =     0.00336989   -0.00699562    0.02706356
+     atom   14 type  1   force =     0.00222366   -0.00357111    0.00288604
+     atom   15 type  1   force =    -0.02625539   -0.01731830   -0.00278445
+     atom   16 type  1   force =    -0.00518229   -0.01511700   -0.00047881
+     atom   17 type  1   force =     0.00676793    0.02092054   -0.01171617
+     atom   18 type  1   force =     0.00273264   -0.00490713    0.00316422
+     atom   19 type  1   force =     0.02573502   -0.00930413    0.00898227
+     atom   20 type  1   force =    -0.00535718    0.01429806   -0.01177074
+     atom   21 type  1   force =    -0.00413358   -0.01047342    0.00086731
+     atom   22 type  1   force =     0.02985741    0.00562029    0.00313494
+     atom   23 type  1   force =     0.00342486    0.00093427    0.00810008
+     atom   24 type  1   force =    -0.01077316   -0.01126889    0.01401937
+     atom   25 type  1   force =     0.00775581    0.00234288   -0.00110903
+     atom   26 type  1   force =     0.00306931   -0.00067075    0.00049963
+     atom   27 type  1   force =    -0.01895045   -0.01125987   -0.00694866
+     atom   28 type  1   force =    -0.00921448   -0.00926568    0.02006573
+     atom   29 type  1   force =    -0.01006739    0.02158325   -0.02706357
+     atom   30 type  1   force =    -0.00137265    0.01172970    0.00426577
+     atom   31 type  1   force =     0.00748096    0.00154113    0.00636852
+     atom   32 type  1   force =     0.00402764   -0.00591936   -0.00414222
+
+     Total force =     0.119595     Total SCF correction =     0.000416
+
+
+     Computing stress (Cartesian axis) and pressure
+
+          total   stress  (Ry/bohr**3)                   (kbar)     P=        5.46
+   0.00003713   0.00000083   0.00000535            5.46        0.12        0.79
+   0.00000083   0.00003812  -0.00000472            0.12        5.61       -0.69
+   0.00000535  -0.00000472   0.00003613            0.79       -0.69        5.31
+
+
+     Writing output data file /scratch/pdheat_0038.save/
+ 
+     init_run     :    108.48s CPU    110.66s WALL (       1 calls)
+     electrons    :   4202.99s CPU   4254.99s WALL (       1 calls)
+     forces       :     61.78s CPU     62.35s WALL (       1 calls)
+     stress       :    422.07s CPU    426.13s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :    107.79s CPU    109.91s WALL (       1 calls)
+     potinit      :      0.20s CPU      0.22s WALL (       1 calls)
+     hinit0       :      0.16s CPU      0.16s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :   3735.83s CPU   3779.27s WALL (      11 calls)
+     sum_band     :    465.73s CPU    474.05s WALL (      11 calls)
+     v_of_rho     :      0.19s CPU      0.22s WALL (      11 calls)
+     newd         :      0.25s CPU      0.38s WALL (      11 calls)
+     PAW_pot      :      0.90s CPU      0.97s WALL (      11 calls)
+     mix_rho      :      0.16s CPU      0.18s WALL (      11 calls)
+
+     Called by c_bands:
+     init_us_2    :     18.36s CPU     18.58s WALL (    9125 calls)
+     cegterg      :   3666.80s CPU   3707.68s WALL (    4015 calls)
+
+     Called by *egterg:
+     cdiaghg      :    464.85s CPU    467.48s WALL (   17540 calls)
+     h_psi        :   1929.60s CPU   1959.82s WALL (   18270 calls)
+     s_psi        :    167.83s CPU    169.03s WALL (   18270 calls)
+     g_psi        :      4.40s CPU      4.48s WALL (   13890 calls)
+
+     Called by h_psi:
+     h_psi:calbec :    295.10s CPU    297.32s WALL (   18270 calls)
+     vloc_psi     :   1453.91s CPU   1479.66s WALL (   18270 calls)
+     add_vuspsi   :    169.46s CPU    171.53s WALL (   18270 calls)
+
+     General routines
+     calbec       :    484.05s CPU    487.66s WALL (   24110 calls)
+     fft          :      0.30s CPU      0.33s WALL (     167 calls)
+     ffts         :      0.11s CPU      0.12s WALL (     207 calls)
+     fftw         :   1702.08s CPU   1731.92s WALL ( 7931140 calls)
+     interpolate  :      0.05s CPU      0.06s WALL (      11 calls)
+ 
+     Parallel routines
+     fft_scatt_xy :    136.52s CPU    138.74s WALL ( 7931514 calls)
+     fft_scatt_yz :   1330.86s CPU   1355.05s WALL ( 7931514 calls)
+ 
+     PWSCF        :      1h21m CPU      1h22m WALL
+
+ 
+   This run was terminated on:  23:44:19  20Mar2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
+%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine create_directory (1):
+     unable to create directory /scratch/pdheat_0038.save/
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
